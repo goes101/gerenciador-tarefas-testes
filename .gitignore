@@ -1,4 +1,6 @@
+# ===============================
 # Logs
+# ===============================
 logs
 *.log
 npm-debug.log*
@@ -7,16 +9,46 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# ===============================
+# Dependências (reinstalar com: npm install)
+# ===============================
 node_modules
+
+# ===============================
+# Build do Vite
+# ===============================
 dist
 dist-ssr
 *.local
 
-# Editor directories and files
+# ===============================
+# Relatórios de cobertura
+# ===============================
+coverage
+coverage-jest
+.nyc_output
+
+# ===============================
+# Artefatos do Cypress
+# ===============================
+cypress/videos
+cypress/screenshots
+cypress/downloads
+
+# ===============================
+# Variáveis de ambiente
+# ===============================
+.env
+.env.*
+
+# ===============================
+# Editores e sistema operacional
+# ===============================
 .vscode/*
 !.vscode/extensions.json
 .idea
 .DS_Store
+Thumbs.db
 *.suo
 *.ntvs*
 *.njsproj
